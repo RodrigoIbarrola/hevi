@@ -3,20 +3,20 @@
     margin: 0;
 }
 @font-face {
-    font-family: rubik;
+    font-family:"Rubik";
     src: url(../fuentes/Rubik-VariableFont_wght.ttf);
 }
 body{
     color:rgb(184, 184, 184);
-    font-family: rubik;
+    font-family:"Rubik";
     src: url(../fuentes/Rubik-VariableFont_wght.ttf);
     background-color: rgb(0, 0, 0);
 }
 a{
-    background-color: transparent;
+
     text-decoration: none;
     color: aliceblue;
-    font-family: rubik;
+    font-family: "Rubik";
     src: url(../fuentes/Rubik-VariableFont_wght.ttf);
 }
 ul{
@@ -29,6 +29,14 @@ ul{
 header{
     position: sticky; top:0;
     background-color: black;
+}
+button{
+    font-size: 1.3rem;
+    border: #ffffff;
+    border-radius: 15px;
+    padding: 1%;
+    background-color: #9a9a9a;
+    color:#fff;
 }
 
 /*menu navegacion*/
@@ -52,12 +60,13 @@ header{
     background: #ffffff;
 }
 
-------------------------------------------
+
 /*index*/
 .hevi img{
     width:100%;
+    
   }
-------------------------------------------
+
 /*Nosotros*/
 .nosotros{
     text-align: center;
@@ -71,14 +80,21 @@ header{
 }
 .nosotros h1{
     font-size: 400%;
+    text-align: center;
 }
 .nosotros h2{
     font-size: 250%;
+    margin-left:4%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+    text-align: center;
 }
 .nosotros p{
     font-size: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
------------------------------------------
+
 /*Proyecto*/
 .proyecto h2{
     font-size: 350%;
@@ -138,7 +154,6 @@ header{
     width: 350px;
 }
 
----------------------------------------------
 
 /*Productos*/
   .productos{
@@ -147,7 +162,9 @@ header{
     margin-top: 5%;
   }
   .productos div{
-    display: inline-table;
+    display: inline-grid;
+    justify-items: center;
+    margin: 2%;
   }
   /*.productos div img{
     padding: 5%;
@@ -174,7 +191,6 @@ header{
     margin: 10px;
     align-items: center;
  }
--------------------------------------------
 
  /*Ideas*/
  .texto-ideas{
@@ -184,9 +200,14 @@ header{
  .ideas{
     font-size: 150%;
     margin: 50px;
-    padding: 10px;
+    padding: 5%;
     border-style:groove;
     border-color:rgb(123, 131, 138)
+ }
+ .h1ideas h1{
+    font-size: 3.3rem;
+    text-align: center;
+    margin-top: 3%;
  }
  .ideas div input{
     font-size:large;
@@ -200,22 +221,27 @@ header{
     border-style: groove;
     border-width: 5px;
  }
--------------------------------------------
+ textarea {
+    display: inline-table;
+    resize: vertical;
+    width: auto;
+    margin-bottom: -25%;
+}
 
  /*RESPONSIVE*/
 
  
      /*celu*/
+
      @media only screen and (max-width: 576px){
 
         header{
-            flex-direction: column;
+            flex-direction:column
         }
         button{
             margin: 1%;
         }
         
-
         .hevi img{
             width: 100%;
 			background-size:cover;
@@ -257,8 +283,6 @@ header{
             padding: 3%;
         }
 
-
-
         /*productos*/
         .productos{
             flex-direction: column;
@@ -276,10 +300,37 @@ header{
             float: left;
         }
         /*Ideas*/
+        .h1ideas h1{
+            font-size: 250%;
+        }
+        .ideas div{
+            font-size: 200%;
+        }
        .ideas div label{
-        font-size:xx-large;
+        font-size:60%;
        }
        .ideas div input{
         font-size: large;
        }
-        }
+       .ideas div textarea{
+        display: inline-table;
+        resize: vertical;
+        width: 34%;
+        height: 49px;
+        font-size: initial;
+        position: absolute;
+        left: 50%;
+        top: 95%;
+    }
+       .boton.idea {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        top: 950px;
+        left: 50px;
+       }
+      
+     }
+        
+        
+        
