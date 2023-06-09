@@ -70,6 +70,9 @@ button {
 }
 
 .nosotros {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../imagenes/ideas3.jpg);
   padding-inline: 10%;
   padding: 5%;
 }
@@ -163,6 +166,8 @@ button {
   margin-top: 2%;
   margin-left: 4%;
   margin-right: 4%;
+  padding: 1%;
+  font-size: x-large;
   color: rgb(255, 255, 255);
 }
 .proyecto img {
