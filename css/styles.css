@@ -1,336 +1,367 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
-@font-face {
-    font-family:"Rubik";
-    src: url(../fuentes/Rubik-VariableFont_wght.ttf);
-}
-body{
-    color:rgb(184, 184, 184);
-    font-family:"Rubik";
-    src: url(../fuentes/Rubik-VariableFont_wght.ttf);
-    background-color: rgb(0, 0, 0);
-}
-a{
 
-    text-decoration: none;
-    color: aliceblue;
-    font-family: "Rubik";
-    src: url(../fuentes/Rubik-VariableFont_wght.ttf);
+body {
+  color: rgb(184, 184, 184);
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(0, 0, 0);
 }
-ul{
-    margin: 20px;
-    display: flex;
-    padding: 10px;
-    justify-content: space-evenly;
-    text-decoration: none;
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Rubik", sans-serif;
 }
-header{
-    position: sticky; top:0;
-    background-color: black;
+
+ul {
+  margin: 20px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  text-decoration: none;
 }
-button{
-    font-size: 1.3rem;
-    border: #ffffff;
-    border-radius: 15px;
-    padding: 1%;
-    background-color: #9a9a9a;
-    color:#fff;
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+}
+
+button {
+  font-size: 1.3rem;
+  border: #ffffff;
+  border-radius: 15px;
+  padding: 1%;
+  background-color: #9a9a9a;
+  color: #fff;
 }
 
 /*menu navegacion*/
-.navbar-expand-lg{
-    background-color: rgb(33, 33, 33);
+.navbar-expand-lg {
+  background-color: rgb(33, 33, 33);
 }
-.navbar-brand{
-    color: #fff;
+
+.navbar-brand {
+  color: #fff;
 }
-.navbar-expand-lg .navbar-collapse{
-    justify-content: space-evenly;
-    font-size:1.3rem;
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-evenly;
+  font-size: 1.3rem;
 }
-.navbar-expand-lg .navbar-collapse li{
-   margin-right: 40px;
+
+.navbar-expand-lg .navbar-collapse li {
+  margin-right: 40px;
 }
-.navbar-expand-lg .navbar-collapse a{
-    color: #fff;
+
+.navbar-expand-lg .navbar-collapse a {
+  color: #fff;
 }
+
 .navbar-toggler:hover {
-    background: #ffffff;
+  background: #ffffff;
 }
 
+.hevi img {
+  width: 100%;
+}
 
-/*index*/
-.hevi img{
-    width:100%;
-    
+.nosotros {
+  padding-inline: 10%;
+  padding: 5%;
+}
+.nosotros h1 {
+  font-size: 400%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.nosotros h2 {
+  font-size: 250%;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 3%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.nosotros p {
+  font-size: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  color: rgb(255, 255, 255);
+}
+
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10%;
+}
+.redes .a {
+  color: rgb(255, 255, 255);
+}
+
+.productosfondo {
+  background-image: url(../imagenes/fondoideas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.productosfondo .h2productos {
+  font-size: 350%;
+  padding-top: 3%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.productos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+.productos div {
+  display: inline-grid;
+  justify-items: center;
+  margin: 2%;
+  background-color: rgb(83, 83, 83);
+}
+.productos img {
+  width: 350px;
+  padding: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.productos p {
+  text-align: center;
+  margin: 10px;
+  font-size: 120%;
+  color: rgb(255, 255, 255);
+}
+.productos button {
+  margin: 10px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.cadena {
+  align-items: center;
+}
+
+.proyecto {
+  background-image: url(../imagenes/fondoideas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.proyecto h2 {
+  font-size: 350%;
+  text-align: center;
+  padding-top: 3%;
+  color: rgb(255, 255, 255);
+}
+.proyecto p {
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 4%;
+  margin-right: 4%;
+  color: rgb(255, 255, 255);
+}
+.proyecto img {
+  width: 100%;
+  height: 90%;
+}
+
+.grid {
+  display: grid;
+  background-color: rgb(83, 83, 83);
+  margin: 5%;
+  padding: 2%;
+  gap: 15px;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: auto;
+  grid-template-areas: "area1 area7 area3" "area4 area8 area6" "area2 area5 area10" "area9 area9 area10";
+}
+
+.img1 {
+  grid-area: area1;
+}
+
+.img2 {
+  grid-area: area2;
+}
+
+.img3 {
+  grid-area: area3;
+}
+
+.img4 {
+  grid-area: area4;
+}
+
+.img5 {
+  grid-area: area5;
+}
+
+.img6 {
+  grid-area: area6;
+}
+
+.img7 {
+  grid-area: area7;
+}
+
+.img8 {
+  grid-area: area8;
+}
+
+.img9 {
+  grid-area: area9;
+}
+
+.img10 {
+  grid-area: area10;
+}
+
+.h1ideas {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../imagenes/fondoideas.jpg);
+}
+
+.texto-ideas {
+  font-size: 250%;
+  margin-left: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.h1ideas h1 {
+  font-size: 3.3rem;
+  text-align: center;
+  padding-top: 3%;
+  color: rgb(255, 255, 255);
+}
+
+.ideas {
+  color: rgb(255, 255, 255);
+  background-color: rgb(83, 83, 83);
+  opacity: 0.9;
+  font-size: 150%;
+  margin: 12%;
+  margin-top: 3%;
+  padding: 5%;
+}
+.ideas div input {
+  font-size: large;
+  margin: 2%;
+}
+.ideas button {
+  margin-top: 15%;
+  padding: 1.3rem;
+  color: rgb(255, 255, 255);
+}
+
+textarea {
+  display: inline-table;
+  resize: vertical;
+  width: auto;
+  margin-bottom: -25%;
+}
+
+/*tablet*/
+@media only screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
   }
-
-/*Nosotros*/
-.nosotros{
-    text-align: center;
-    margin-inline: 10%;
-    margin-top: 5%;
-}
-.redes{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10%;
-}
-.nosotros h1{
-    font-size: 400%;
-    text-align: center;
-}
-.nosotros h2{
-    font-size: 250%;
-    margin-left:4%;
-    margin-right: 4%;
-    margin-bottom: 3%;
-    text-align: center;
-}
-.nosotros p{
-    font-size: 20px;
-    margin-left: 3%;
-    margin-right: 3%;
-}
-
-/*Proyecto*/
-.proyecto h2{
-    font-size: 350%;
-    text-align: center;
-}
-.proyecto p{
-    text-align: center;
-    margin-top: 2%;
-    margin-left: 4%;
-    margin-right: 4%;
-}
-.grid{
-    display: grid;
-    margin: 5%;
-    gap: 15px;
-    grid-template-columns: repeat(3, 3fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-    'area1 area7 area3'
-    'area4 area8 area6'
-    'area2 area5 area10'
-    'area9 area9 area10'
-    ;
-   
-}
-.img1{
-    grid-area: area1;
-}
-.img2{
-    grid-area: area2;
-}
-.img3{
-    grid-area: area3;
-}
-.img4{
-    grid-area: area4;
-}
-.img5{
-    grid-area: area5;
-}
-.img6{
-    grid-area: area6;
-}
-.img7{
-    grid-area: area7;
-}
-.img8{
-    grid-area: area8;
-}
-.img9{
-    grid-area: area9;
-}
-.img10{
-    grid-area: area10;
-}
-.proyecto img{
-    width: 350px;
-}
-
-
-/*Productos*/
-  .productos{
-    display: flex;
-    justify-content:space-evenly;
-    margin-top: 5%;
-  }
-  .productos div{
-    display: inline-grid;
-    justify-items: center;
-    margin: 2%;
-  }
-  /*.productos div img{
-    padding: 5%;
-  }*/
-  .h2productos{
-    font-size: 350%;
-    margin: 2%;
-  }
-   .productos img{
-   width: 350px;
-   padding: 5%;
-   display: flex;
-   justify-content: space-evenly;
- }
- .productos p{
-    text-align:center;
-    margin: 10px;
-    font-size: 120%;
- }
- .cadena{
-    align-items: center;
- }
- .productos button{
-    margin: 10px;
-    align-items: center;
- }
-
- /*Ideas*/
- .texto-ideas{
-    font-size: 250%;
-    margin-left: 50px;
- }
- .ideas{
-    font-size: 150%;
-    margin: 50px;
-    padding: 5%;
-    border-style:groove;
-    border-color:rgb(123, 131, 138)
- }
- .h1ideas h1{
-    font-size: 3.3rem;
-    text-align: center;
-    margin-top: 3%;
- }
- .ideas div input{
-    font-size:large;
- }
- .ideas button{
-    margin: 3%;
-    display:inline-block;
- }
- .ideas input{
+  button {
     margin: 1%;
-    border-style: groove;
-    border-width: 5px;
- }
- textarea {
-    display: inline-table;
-    resize: vertical;
+  }
+  .hevi img {
+    width: 100%;
+    background-size: cover;
+  }
+  /*proyecto*/
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+    grid-template-areas: "area1 area2" "area3 area4" "area7 area6" "area5 area10" "area8 area10" "area9 area9";
+  }
+  .proyecto img {
+    width: 100%;
+  }
+  /*Nosotros*/
+  .nosotros h1 {
+    font-size: 200%;
+    margin-left: 5%;
+  }
+  .nosotros h2 {
+    font-size: 150%;
+    margin: 5%;
+  }
+  .nosotros p {
+    font-size: 100%;
+    text-align: center;
+    margin: 5%;
+    padding: 3%;
+  }
+  /*productos*/
+  .productos {
+    flex-direction: column;
+  }
+  .productos div {
+    margin: 5px;
+    background-color: rgb(83, 83, 83);
+  }
+  .productos img {
+    margin: 2%;
+    float: left;
+  }
+  .h2productos {
+    font-size: 300%;
+    text-align: center;
+  }
+  /*Ideas*/
+  .h1ideas h1 {
+    font-size: 250%;
+  }
+  .ideas {
+    font-size: xx-large;
     width: auto;
-    margin-bottom: -25%;
+    height: 100%;
+  }
+  .ideas div {
+    font-size: xx-large;
+  }
+  .ideas div textarea {
+    width: 34%;
+    height: 49px;
+  }
+  .ideas div input {
+    margin: 0%;
+    border-style: none;
+  }
+  .boton.idea {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 950px;
+    left: 50px;
+  }
+}
+/*celu*/
+@media only screen and (max-width: 530px) {
+  .grid {
+    display: block;
+    margin: 3%;
+    padding: 3%;
+  }
+  .grid video {
+    width: 100%;
+    max-width: 100%;
+  }
+  .ideas div input {
+    width: 100%;
+  }
 }
 
- /*RESPONSIVE*/
-
- 
-     /*celu*/
-
-     @media only screen and (max-width: 576px){
-
-        header{
-            flex-direction:column
-        }
-        button{
-            margin: 1%;
-        }
-        
-        .hevi img{
-            width: 100%;
-			background-size:cover;
-        }
-
-        /*proyecto*/
-        .grid{
-            display:grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-            gap: 15px;
-            grid-template-areas:
-            'area1 area2'
-            'area3 area4'
-            'area7 area6'
-            'area5 area10'
-            'area8 area10'
-            'area9 area9'
-         ;
-        }
-        
-        .proyecto img{
-            width: 100%;
-        }
-
-        /*Nosotros*/
-        .nosotros h1{
-            font-size: 200%;
-            margin-left: 5%;
-        }
-        .nosotros h2{
-            font-size: 150%;
-            margin: 5%;
-        }
-        .nosotros p{
-            font-size: 100%;
-            text-align: center;
-            margin: 5%;
-            padding: 3%;
-        }
-
-        /*productos*/
-        .productos{
-            flex-direction: column;
-        }
-        .h2productos{
-            font-size: 300%;
-            text-align: center;
-        }
-        .productos div{
-            margin: 5px;
-            background-color: #393939;
-        }
-        .productos img{
-            margin: 2%;
-            float: left;
-        }
-        /*Ideas*/
-        .h1ideas h1{
-            font-size: 250%;
-        }
-        .ideas div{
-            font-size: 200%;
-        }
-       .ideas div label{
-        font-size:60%;
-       }
-       .ideas div input{
-        font-size: large;
-       }
-       .ideas div textarea{
-        display: inline-table;
-        resize: vertical;
-        width: 34%;
-        height: 49px;
-        font-size: initial;
-        position: absolute;
-        left: 50%;
-        top: 95%;
-    }
-       .boton.idea {
-        display: flex;
-        gap: 10px;
-        position: absolute;
-        top: 950px;
-        left: 50px;
-       }
-      
-     }
-        
-        
-        
+/*# sourceMappingURL=styles.css.map */

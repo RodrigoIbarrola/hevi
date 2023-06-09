@@ -1,0 +1,44 @@
+.productosfondo{
+   background-image: url(../imagenes/fondoideas.jpg);
+   background-size: cover;
+    background-position: center;
+    
+  .h2productos{
+    font-size: 350%;
+    padding-top: 3%;
+    text-align: center;
+    color: $letras;
+  }
+}
+.productos{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 5%;
+
+    div{
+      display: inline-grid;
+      justify-items: center;
+      margin: 2%;
+      background-color: $main-color;
+    }
+    img{
+      width: 350px;
+      padding: 3%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    p{
+      text-align:center;
+      margin: 10px;
+      font-size: 120%;
+      color: $letras;
+   }
+   button{
+    margin: 10px;
+    align-items: center;
+    color: $letras;
+ }
+  }
+ .cadena{
+    align-items: center;
+ }

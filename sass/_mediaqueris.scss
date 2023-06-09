@@ -1,0 +1,118 @@
+ /*tablet*/
+
+ @media only screen and (max-width: 800px){
+
+    header{
+        flex-direction:column
+    }
+    button{
+        margin: 1%;
+    }
+    
+    .hevi img{
+        width: 100%;
+        background-size:cover;
+    }
+
+    /*proyecto*/
+    .grid{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        grid-template-areas:
+        'area1 area2'
+        'area3 area4'
+        'area7 area6'
+        'area5 area10'
+        'area8 area10'
+        'area9 area9'
+     ;
+    }
+    
+    .proyecto img{
+        width: 100%;
+    }
+
+    /*Nosotros*/
+    .nosotros h1{
+        font-size: 200%;
+        margin-left: 5%;
+    }
+    .nosotros h2{
+        font-size: 150%;
+        margin: 5%;
+    }
+    .nosotros p{
+        font-size: 100%;
+        text-align: center;
+        margin: 5%;
+        padding: 3%;
+    }
+
+    /*productos*/
+    .productos{
+        flex-direction: column;
+
+        div{
+            margin: 5px;
+            background-color: $main-color;
+        }
+        img{
+            margin: 2%;
+            float: left;
+        }
+    }
+    .h2productos{
+        font-size: 300%;
+        text-align: center;
+    }
+    /*Ideas*/
+    .h1ideas h1{
+        font-size: 250%;
+    }
+    .ideas{
+        font-size: xx-large;
+        width: auto;
+        height: 100%;
+       
+        div{
+            font-size: xx-large;
+               textarea{
+                width: 34%;
+                height: 49px;
+            }
+            input{
+                margin: 0%;
+                border-style: none;
+               }
+        }
+    } 
+   .boton.idea {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 950px;
+    left: 50px;
+   }
+}
+
+/*celu*/
+ @media only screen and (max-width: 530px){
+    .grid{
+        display: block;
+        margin: 3%;
+        padding: 3%;
+        video {
+            width: 100%;
+            max-width: 100%;
+          }
+ }
+ .ideas{
+    div{
+        input{
+            width: 100%;
+        }
+    }
+ }
+}
