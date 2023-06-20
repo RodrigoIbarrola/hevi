@@ -65,8 +65,19 @@ button {
   background: #ffffff;
 }
 
-.hevi img {
-  width: 100%;
+.hevi div {
+  background-image: url(../imagenes/hevi.jpg);
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height: 1200px;
+}
+
+footer {
+  background-image: url(../imagenes/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3%;
 }
 
 .nosotros {
@@ -99,7 +110,7 @@ button {
 .redes {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 10%;
+  background-image: none;
 }
 .redes .a {
   color: rgb(255, 255, 255);
@@ -109,6 +120,11 @@ button {
   background-image: url(../imagenes/fondoideas.jpg);
   background-size: cover;
   background-position: center;
+}
+.productosfondo h2 {
+  font-size: xxx-large;
+  text-align: center;
+  padding-top: 2%;
 }
 .productosfondo .h2productos {
   font-size: 350%;
@@ -121,12 +137,14 @@ button {
   display: flex;
   justify-content: space-evenly;
   margin-top: 5%;
+  flex-wrap: wrap;
 }
 .productos div {
   display: inline-grid;
   justify-items: center;
   margin: 2%;
   background-color: rgb(83, 83, 83);
+  width: min-content;
 }
 .productos img {
   width: 350px;
@@ -173,6 +191,10 @@ button {
 .proyecto img {
   width: 100%;
   height: 90%;
+}
+
+.footerproyecto {
+  margin-top: -5%;
 }
 
 .grid {
@@ -247,7 +269,9 @@ button {
 
 .ideas {
   color: rgb(255, 255, 255);
-  background-color: rgb(83, 83, 83);
+  background-image: url(../imagenes/formulario.gif);
+  background-size: cover;
+  background-position: center;
   opacity: 0.9;
   font-size: 150%;
   margin: 12%;
@@ -260,6 +284,7 @@ button {
 }
 .ideas button {
   margin-top: 15%;
+  margin-right: 3%;
   padding: 1.3rem;
   color: rgb(255, 255, 255);
 }
@@ -269,6 +294,10 @@ textarea {
   resize: vertical;
   width: auto;
   margin-bottom: -25%;
+}
+
+.footerideas {
+  margin-top: -12%;
 }
 
 /*tablet*/
@@ -311,17 +340,20 @@ textarea {
   }
   /*productos*/
   .productos {
-    flex-direction: column;
+    flex-direction: initial;
+    margin: 10%;
   }
   .productos div {
     margin: 5px;
     background-color: rgb(83, 83, 83);
+    width: 40%;
   }
   .productos img {
     margin: 2%;
     float: left;
+    width: 100%;
   }
-  .h2productos {
+  .productosfondo h2 {
     font-size: 300%;
     text-align: center;
   }
@@ -355,6 +387,11 @@ textarea {
 }
 /*celu*/
 @media only screen and (max-width: 530px) {
+  /*index*/
+  .hevi div {
+    background-size: contain;
+  }
+  /*Proyectos*/
   .grid {
     display: block;
     margin: 3%;
@@ -364,8 +401,37 @@ textarea {
     width: 100%;
     max-width: 100%;
   }
+  /*Ideas*/
+  .h1ideas h1 {
+    font-size: x-large;
+  }
+  .ideas button {
+    padding: 3%;
+  }
+  .ideas div label {
+    font-size: medium;
+  }
   .ideas div input {
+    font-size: revert;
     width: 100%;
+  }
+  /*footer general*/
+  .redes button a {
+    font-size: small;
+  }
+  /*prodcutos*/
+  .productos {
+    flex-direction: column;
+    margin: 8%;
+  }
+  .productos div {
+    width: 100%;
+  }
+  .productos .img {
+    width: 100%;
+  }
+  .productosfondo h2 {
+    font-size: xx-large;
   }
 }
 
