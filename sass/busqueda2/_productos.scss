@@ -2,18 +2,11 @@
    background-image: url(../imagenes/fondoideas.jpg);
    background-size: cover;
    background-position: center;
-
    h2{
-    font-size: xxx-large;
-    text-align: center;
-    padding-top: 2%;
-   }
-    
-  .h2productos{
+    color: $letras;
     font-size: 350%;
     padding-top: 3%;
     text-align: center;
-    color: $letras;
   }
 }
 .productos{

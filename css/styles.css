@@ -122,15 +122,10 @@ footer {
   background-position: center;
 }
 .productosfondo h2 {
-  font-size: xxx-large;
-  text-align: center;
-  padding-top: 2%;
-}
-.productosfondo .h2productos {
+  color: rgb(255, 255, 255);
   font-size: 350%;
   padding-top: 3%;
   text-align: center;
-  color: rgb(255, 255, 255);
 }
 
 .productos {
@@ -384,15 +379,27 @@ textarea {
 }
 /*celu*/
 @media only screen and (max-width: 530px) {
+  /*footer general*/
+  .redes button a {
+    font-size: small;
+  }
   /*index*/
   .hevi div {
     background-size: contain;
   }
   /*Proyectos*/
+  .proyecto h2 {
+    font-size: x-large;
+  }
+  .proyecto p {
+    font-size: medium;
+  }
   .grid {
     display: block;
-    margin: 3%;
-    padding: 3%;
+    margin-top: 5%;
+    padding: 4%;
+    margin-right: 10%;
+    margin-left: 8%;
   }
   .grid video {
     width: 100%;
@@ -411,10 +418,6 @@ textarea {
   .ideas div input {
     font-size: revert;
     width: 100%;
-  }
-  /*footer general*/
-  .redes button a {
-    font-size: small;
   }
   /*prodcutos*/
   .productos {

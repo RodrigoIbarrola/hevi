@@ -104,6 +104,15 @@
 
 /*celu*/
  @media only screen and (max-width: 530px){
+     /*footer general*/
+ .redes{
+    button{
+        a{
+            font-size: small;
+        }
+    }
+ }
+
     /*index*/
     .hevi{
         div{
@@ -111,10 +120,20 @@
         }
     }
     /*Proyectos*/
+    .proyecto{
+        h2{
+            font-size: x-large;
+        }
+        p{
+            font-size: medium;
+        }
+    }
     .grid{
         display: block;
-        margin: 3%;
-        padding: 3%;
+        margin-top: 5%;
+        padding: 4%;
+        margin-right: 10%;
+        margin-left: 8%;
         video {
             width: 100%;
             max-width: 100%;
@@ -136,15 +155,6 @@
         input{
             font-size: revert;
             width: 100%;
-        }
-    }
- }
-
- /*footer general*/
- .redes{
-    button{
-        a{
-            font-size: small;
         }
     }
  }
